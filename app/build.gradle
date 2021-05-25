@@ -48,7 +48,9 @@ dependencies {
 
     implementation 'androidx.fragment:fragment-ktx:1.3.4'
 
+    //Для работы с сервером
     implementation 'com.squareup.retrofit2:retrofit:2.7.0'
+    //Конвертор Json в KT / JV классы
     implementation 'com.squareup.retrofit2:converter-gson:2.7.0'
 
     implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.1'
