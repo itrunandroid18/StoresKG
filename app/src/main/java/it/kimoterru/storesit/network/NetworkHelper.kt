@@ -1,6 +1,5 @@
-@file:Suppress("UNREACHABLE_CODE")
-
 package it.kimoterru.storesit.network
+
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
