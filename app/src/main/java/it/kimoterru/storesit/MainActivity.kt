@@ -26,6 +26,9 @@ class MainActivity : AppCompatActivity() {
             val newFragment = when(it.itemId) {
                 R.id.home -> homeFragment
                 R.id.catalog -> homeFragment //todo change later
+                R.id.store -> homeFragment //todo change later
+                R.id.heart -> homeFragment //todo change later
+                R.id.profile -> homeFragment //todo change later
                 else -> homeFragment //todo change later
             }
             supportFragmentManager.beginTransaction()
