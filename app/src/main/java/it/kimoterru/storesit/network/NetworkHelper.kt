@@ -10,12 +10,14 @@ object NetworkHelper {
         .build()
     private var service: ApiService? = null
 
-    fun getService() : ApiService{
+    fun getService() : ApiService {
         if (service == null) {
             service = retrofit.create(ApiService::class.java)
         }
         return service!!
+
         val arr = arrayListOf<String>()
+        //...
         for(item in arr) {
             println(item)
         }

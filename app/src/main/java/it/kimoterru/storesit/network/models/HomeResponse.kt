@@ -1,6 +1,6 @@
 package it.kimoterru.storesit.network.models
 
-data class HomeReponse(
+data class HomeResponse(
     val clearanceSaleProductList: List<HomeListItem>,
     val discountProductList: List<HomeListItem>,
     val hitProductList: List<HomeListItem>,

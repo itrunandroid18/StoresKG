@@ -7,6 +7,12 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
         <LinearLayout
             android:id="@+id/home_new"
             android:layout_width="match_parent"
@@ -57,7 +63,7 @@
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:text="Новинки"
+                    android:text="Новые поступления"
                     android:layout_weight="1"
                     android:textSize="22sp"
                     android:textStyle="bold"/>
@@ -93,7 +99,7 @@
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:text="Новинки"
+                    android:text="Распродажи"
                     android:layout_weight="1"
                     android:textSize="22sp"
                     android:textStyle="bold"/>
@@ -129,7 +135,7 @@
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:text="Новинки"
+                    android:text="Скидки"
                     android:layout_weight="1"
                     android:textSize="22sp"
                     android:textStyle="bold"/>
@@ -151,7 +157,6 @@
                 android:layout_height="wrap_content"/>
 
         </LinearLayout>
-
 
     </LinearLayout>
 
