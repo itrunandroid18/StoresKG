@@ -86,14 +86,14 @@ class HomeFragment : Fragment(), ProductClickListener {
     }
 
     override fun onItemClick(id: Long) {
-        TODO("Not yet implemented")
+        Toast.makeText(this.context, "onClick" + id, Toast.LENGTH_LONG).show()
     }
 
     override fun onFavoriteClick(id: Long) {
-        TODO("Not yet implemented")
+        Toast.makeText(this.context, "onClick" + id, Toast.LENGTH_LONG).show()
     }
 
     override fun onAddToCartClick(id: Long) {
-        TODO("Not yet implemented")
+        Toast.makeText(this.context, "onClick" + id, Toast.LENGTH_LONG).show()
     }
 }
