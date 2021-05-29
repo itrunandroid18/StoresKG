@@ -11,11 +11,12 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import it.kimoterru.storesit.adapters.HomeListAdapter
+import it.kimoterru.storesit.adapters.ProductClickListener
 import it.kimoterru.storesit.databinding.FragmentHomeBinding
 import it.kimoterru.storesit.network.Status
 import it.kimoterru.storesit.network.models.HomeResponse
 
-class HomeFragment : Fragment() {
+class HomeFragment : Fragment(), ProductClickListener {
     private var _binding: FragmentHomeBinding? = null
     private val binding get() = _binding!!
 
@@ -65,10 +66,10 @@ class HomeFragment : Fragment() {
     }
 
     private fun displayData(response: HomeResponse?) {
-        binding.recyclerNew.adapter = HomeListAdapter(response?.newProductList ?: listOf())
-        binding.recyclerNewIncome.adapter = HomeListAdapter(response?.incomeProductList ?: listOf())
-        binding.recyclerHotSales.adapter = HomeListAdapter(response?.clearanceSaleProductList ?: listOf())
-        binding.recyclerDiscount.adapter = HomeListAdapter(response?.discountProductList ?: listOf())
+        binding.recyclerNew.adapter = HomeListAdapter(response?.newProductList ?: listOf(), this)
+        binding.recyclerNewIncome.adapter = HomeListAdapter(response?.incomeProductList ?: listOf(), this)
+        binding.recyclerHotSales.adapter = HomeListAdapter(response?.clearanceSaleProductList ?: listOf(), this)
+        binding.recyclerDiscount.adapter = HomeListAdapter(response?.discountProductList ?: listOf(), this)
 
         if (response?.newProductList.isNullOrEmpty()) {
             binding.homeNew.isVisible = false
@@ -82,5 +83,17 @@ class HomeFragment : Fragment() {
         if (response?.discountProductList.isNullOrEmpty()) {
             binding.homeDiscount.isVisible = false
         }
+    }
+
+    override fun onItemClick(id: Long) {
+        TODO("Not yet implemented")
+    }
+
+    override fun onFavoriteClick(id: Long) {
+        TODO("Not yet implemented")
+    }
+
+    override fun onAddToCartClick(id: Long) {
+        TODO("Not yet implemented")
     }
 }
