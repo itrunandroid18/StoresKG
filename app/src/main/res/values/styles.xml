@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.StoresKG" parent="Theme.Design.Light.NoActionBar"/>
+
+    <style name="SplashScreen" parent="Theme.StoresKG">
+        <item name="android:windowFullscreen">true</item>
+    </style>
+</resources>
