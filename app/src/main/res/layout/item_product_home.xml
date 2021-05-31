@@ -20,7 +20,7 @@
             android:layout_height="200dp"
             android:scaleType="centerCrop"
             android:adjustViewBounds="true"
-            android:background="@drawable/ic_launcher_background"
+            android:background="@drawable/pre_view"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"/>
